@@ -1,3 +1,4 @@
+![Simulation Result](results/simulation_output.png)
 # AI-Based Traffic Optimization Simulation  
 ## Case Study: Kami-Shakujii Railroad Crossing Congestion
 
