@@ -2,7 +2,7 @@
 # AI-Based Traffic Optimization Simulation  
 ## Case Study: Kami-Shakujii Railroad Crossing Congestion
 
-This project simulates traffic congestion and bus delay　around the railroad crossing near Kami-Shakujii Station in Tokyo.
+This project simulates traffic congestion and bus delay around the railroad crossing near Kami-Shakujii Station in Tokyo.
 
 The goal is to evaluate whether AI-based traffic control and routing optimization can reduce congestion and improve bus punctuality during the morning rush hour.
 
