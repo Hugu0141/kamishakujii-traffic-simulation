@@ -1,0 +1,55 @@
+time_seconds,time_hm,crossing_state,duration_seconds,notes
+0,07:00,open,300,Initial state - before first train
+300,07:05,closed,45,Train passage 1
+345,07:05:45,open,240,Crossing open
+585,07:09:45,closed,40,Train passage 2
+625,07:10:25,open,235,Crossing open
+860,07:14:20,closed,42,Train passage 3
+902,07:15:02,open,238,Crossing open
+1140,07:19:00,closed,41,Train passage 4
+1181,07:19:41,open,239,Crossing open
+1420,07:23:40,closed,43,Train passage 5
+1463,07:24:23,open,237,Crossing open
+1700,07:28:20,closed,40,Train passage 6
+1740,07:29:00,open,240,Crossing open
+1980,07:33:00,closed,44,Train passage 7
+2024,07:33:44,open,236,Crossing open
+2260,07:37:40,closed,42,Train passage 8
+2302,07:38:22,open,238,Crossing open
+2540,07:42:20,closed,41,Train passage 9
+2581,07:43:01,open,239,Crossing open
+2820,07:47:00,closed,40,Train passage 10
+2860,07:47:40,open,240,Crossing open
+3100,07:51:40,closed,43,Train passage 11 (Peak congestion starts)
+3143,07:52:23,open,237,Crossing open
+3380,07:56:20,closed,42,Train passage 12
+3422,07:57:02,open,238,Crossing open
+3660,08:01:00,closed,40,Train passage 13
+3700,08:01:40,open,240,Crossing open
+3940,08:05:40,closed,44,Train passage 14
+3984,08:06:24,open,236,Crossing open
+4220,08:10:20,closed,42,Train passage 15
+4262,08:11:02,open,238,Crossing open
+4500,08:15:00,closed,41,Train passage 16
+4541,08:15:41,open,239,Crossing open
+4780,08:19:40,closed,40,Train passage 17
+4820,08:20:20,open,240,Crossing open
+5060,08:24:20,closed,43,Train passage 18
+5103,08:25:03,open,237,Crossing open
+5340,08:29:00,closed,42,Train passage 19
+5382,08:29:42,open,238,Crossing open
+5620,08:33:40,closed,40,Train passage 20
+5660,08:34:20,open,240,Crossing open
+5900,08:38:20,closed,44,Train passage 21
+5944,08:39:04,open,236,Crossing open
+6180,08:43:00,closed,42,Train passage 22
+6222,08:43:42,open,238,Crossing open
+6460,08:47:40,closed,41,Train passage 23
+6501,08:48:21,open,239,Crossing open
+6740,08:52:20,closed,40,Train passage 24
+6780,08:53:00,open,240,Crossing open (Peak congestion ends)
+7020,08:57:00,closed,43,Train passage 25
+7063,08:57:43,open,237,Crossing open
+7300,09:01:40,closed,42,Train passage 26
+7342,09:02:22,open,238,Crossing open
+7380,09:03:00,end,0,Simulation end

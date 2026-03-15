@@ -1,0 +1,37 @@
+parameter_category,parameter_name,value,unit,data_source,notes,uncertainty_range
+Road Traffic,Car inflow rate (7:00-7:30),20,vehicles/min,Tokyo traffic statistics estimation,Morning light traffic,15-25
+Road Traffic,Car inflow rate (7:30-8:30),35,vehicles/min,Tokyo traffic statistics estimation,Peak rush hour,30-40
+Road Traffic,Car inflow rate (8:30-9:00),22,vehicles/min,Tokyo traffic statistics estimation,Decreasing traffic,18-26
+Road Traffic,Car passing rate at crossing,8,vehicles/5sec,Road capacity estimation,Maximum throughput when crossing open,6-10
+Road Traffic,Car queue threshold for bus delay,5,vehicles,Estimation,When cars > 5, bus experiences delay,3-7
+Road Traffic,Car rerouting rate (AI optimized),80,%,AI optimization assumption,Percentage of cars diverted during closure,70-90
+Road Traffic,Car rerouting rate (baseline),0,%,Baseline case,No rerouting in baseline,N/A
+Bus Operations,Total buses in simulation,15,buses,From timetable,All buses crossing during 7-9 hours,15
+Bus Operations,Bus dwell time (Kichijoji route),45,seconds,Site observation (estimated),Average stop duration,30-60
+Bus Operations,Bus dwell time (Tamagawa route),60,seconds,Site observation (estimated),Average stop duration,45-75
+Bus Operations,Bus crossing time,5,seconds,Road distance estimation,Time to cross the intersection,3-7
+Bus Operations,Bus approaching state,approaching,status,Model definition,Waiting for crossing to open,N/A
+Railroad Crossing,Closing rate (baseline),76,%,Fumikiri closure visualization data,Measured from screenshot - peak hour,70-85
+Railroad Crossing,Closing rate (sensitivity analysis low),70,%,Sensitivity analysis,Conservative estimate,N/A
+Railroad Crossing,Closing rate (sensitivity analysis high),85,%,Sensitivity analysis,Pessimistic estimate,N/A
+Railroad Crossing,Average closure duration,40-45,seconds,Fumikiri standard procedure,Typical train passage time,35-50
+Railroad Crossing,Average cycle time,300,seconds,Seibu Shinjuku Line schedule,Train interval during peak,240-360
+Railroad Crossing,Train count (7-9 hours),26,trains,Western Tokyo timetable,Approximate number of trains,20-30
+Simulation,Simulation duration,7200,seconds,Fixed,2 hours (7:00-9:00),N/A
+Simulation,Time step,1,second,Model precision,Granularity of simulation,1
+Simulation,Simulation runs,1,times,Baseline and optimized only,One run per pattern,N/A
+Traffic Optimization,AI optimization type,Car rerouting + Bus scheduling,method,Proposed solution,Combined approach,N/A
+Traffic Optimization,Bus departure time adjustment range,±5,minutes,AI optimization,Maximum adjustment window,±3 to ±10
+Traffic Optimization,Optimization trigger,Crossing closure prediction,event,AI-based prediction,Real-time traffic monitoring,N/A
+Data Quality,Crossing data source,Fumikiri visualization,source,Screenshot analysis,Calculated from visual chart,High uncertainty
+Data Quality,Traffic flow estimation,Tokyo statistics + estimation,source,Public data + local knowledge,Rough estimate,Medium uncertainty
+Data Quality,Bus schedule accuracy,High,rating,Official timetable,From actual bus company data,Low uncertainty
+Data Quality,Parameter confidence level,Medium,rating,Mixed sources,Combination of real + estimated,N/A
+Assumptions,Assumption 1,Cars can be perfectly diverted,description,Unrealistic but optimistic,Perfect information and compliance,Real world: 50-80%
+Assumptions,Assumption 2,Buses follow AI recommendations,description,Autonomous bus assumption,Self-driving capability required,Real world: Requires automated control
+Assumptions,Assumption 3,No random accidents or delays,description,Ideal condition,No external disruptions,Real world: 5-10% incidents
+Assumptions,Assumption 4,Linear car flow model,description,Simplification,No intersection interactions,Real world: Multiple intersections
+Assumptions,Assumption 5,Uniform bus occupancy,description,Constant stop time,No variable passenger loads,Real world: ±10-15 seconds variance
+Sensitivity Testing,Parameter varied,Closing rate (percentage),variable,Robustness check,Range: 70%-85%,N/A
+Sensitivity Testing,Sensitivity result,46.0%-46.4%,improvement_rate,Stable across range,All closure rates tested,N/A
+Sensitivity Testing,Conclusion,Results are robust,finding,Low sensitivity,Small variance = high confidence,N/A
